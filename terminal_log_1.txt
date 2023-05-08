@@ -1,0 +1,1038 @@
+Script started on 2023-05-02 11:07:11+0900
+(base) ]0;siruu@siruu: ~/Desktop/Carla_Leaderboard_2_0/op_bridge[01;32msiruu@siruu[00m:[01;34m~/Desktop/Carla_Leaderboard_2_0/op_bridge[00m$ conda deactivate
+]0;siruu@siruu: ~/Desktop/Carla_Leaderboard_2_0/op_bridge[01;32msiruu@siruu[00m:[01;34m~/Desktop/Carla_Leaderboard_2_0/op_bridge[00m$ cd op_c[Kscripts/
+]0;siruu@siruu: ~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[01;32msiruu@siruu[00m:[01;34m~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[00m$ ./rn[Kun_e[Krun[K[Koute_sccenarios.sh run_[K
+
+[1m========= Preparing RouteScenario_0 (repetition 0) =========
+> Setting up the agent[0m
+[1m> Loading the world[0m
+WARNING: Actor model vehicle.lincoln.mkz2017 not available. Using instead vehicle.tesla.model3
+WARNING: Not all actors were spawned
+ >>>>> Ego Vehicle Prepared !!  1
+[1m> Running the route[0m
+[INFO] [1682993267.230160, 0.050000]: Executing stack...
+('Executing stack...', 'hero', 'Town01')
+-------------------------------
+Starting OpenPlanner .. 
+hero
+Town01
+false
+/carla/hero/waypoints
+-------------------------------
+... logging to /home/siruu/.ros/log/9bc8e2c2-e88c-11ed-a4e8-28d0ea5380d1/roslaunch-siruu-22846.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/siruu/Desktop/Carla_Leaderboard_2_0/op_agent/bridge2autoware.launch
+[1mstarted roslaunch server http://localhost:39597/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /detection/lidar_detector/cluster_detect_visualization_01/objects_src_topic: /objects
+ * /lidar_euclidean_cluster_detect/clip_max_height: 2.5
+ * /lidar_euclidean_cluster_detect/clip_min_height: -1.6
+ * /lidar_euclidean_cluster_detect/cluster_merge_threshold: 0
+ * /lidar_euclidean_cluster_detect/cluster_size_max: 100000
+ * /lidar_euclidean_cluster_detect/cluster_size_min: 5
+ * /lidar_euclidean_cluster_detect/clustering_distance: 0.75
+ * /lidar_euclidean_cluster_detect/clustering_distances: [0.5,1.1,1.6,2.1,...
+ * /lidar_euclidean_cluster_detect/clustering_ranges: [15,30,45,60]
+ * /lidar_euclidean_cluster_detect/downsample_cloud: False
+ * /lidar_euclidean_cluster_detect/keep_lane_left_distance: 5
+ * /lidar_euclidean_cluster_detect/keep_lane_right_distance: 5
+ * /lidar_euclidean_cluster_detect/keep_lanes: False
+ * /lidar_euclidean_cluster_detect/leaf_size: 0.1
+ * /lidar_euclidean_cluster_detect/output_frame: velodyne
+ * /lidar_euclidean_cluster_detect/points_node: /points_no_ground
+ * /lidar_euclidean_cluster_detect/pose_estimation: False
+ * /lidar_euclidean_cluster_detect/remove_ground: False
+ * /lidar_euclidean_cluster_detect/remove_points_upto: 2.5
+ * /lidar_euclidean_cluster_detect/use_diffnormals: False
+ * /lidar_euclidean_cluster_detect/use_gpu: True
+ * /lidar_euclidean_cluster_detect/use_multiple_thres: False
+ * /lidar_kf_contour_track/enableInternalVisualization: True
+ * /lidar_kf_contour_track/enableLogging: False
+ * /lidar_kf_contour_track/enableSimulationMode: False
+ * /lidar_kf_contour_track/enableStepByStepMode: False
+ * /lidar_kf_contour_track/map_filter_type: 2
+ * /lidar_kf_contour_track/max_association_distance: 4
+ * /lidar_kf_contour_track/max_association_size_diff: 0.0
+ * /lidar_kf_contour_track/max_object_size: 20.0
+ * /lidar_kf_contour_track/max_remeber_time: 1.5
+ * /lidar_kf_contour_track/min_object_size: 0.05
+ * /lidar_kf_contour_track/polygon_quarters: 16
+ * /lidar_kf_contour_track/polygon_resolution: 0.5
+ * /lidar_kf_contour_track/tracker_input_topic: /detection/lidar_...
+ * /lidar_kf_contour_track/tracker_output_topic: /detection/contou...
+ * /lidar_kf_contour_track/tracking_frame: /map
+ * /lidar_kf_contour_track/tracking_type: 1
+ * /lidar_kf_contour_track/trust_counter: 2
+ * /lidar_kf_contour_track/useDetectionHulls: False
+ * /lidar_kf_contour_track/vector_map_filter_distance: 5.0
+ * /lidar_kf_contour_track/vehicle_length: 4.2
+ * /lidar_kf_contour_track/vehicle_width: 1.85
+ * /localizer: velodyne
+ * /ndt_matching/get_height: True
+ * /ndt_matching/gnss_reinit_fitness: 10000.0
+ * /ndt_matching/imu_topic: /imu_raw
+ * /ndt_matching/imu_upside_down: False
+ * /ndt_matching/method_type: 0
+ * /ndt_matching/offset: linear
+ * /ndt_matching/output_log_data: False
+ * /ndt_matching/output_tf_frame_id: base_link
+ * /ndt_matching/queue_size: 1
+ * /ndt_matching/use_gnss: True
+ * /ndt_matching/use_imu: False
+ * /ndt_matching/use_local_transform: False
+ * /ndt_matching/use_odom: False
+ * /op_behavior_selector/evidence_trust_number: 3
+ * /op_behavior_selector/show_driving_path: False
+ * /op_behavior_selector/use_sim_time: False
+ * /op_common_params/accelerationPushRatio: 15
+ * /op_common_params/additionalBrakingDistance: 4.0
+ * /op_common_params/back_length: 0.6
+ * /op_common_params/brakingPushRatio: 8
+ * /op_common_params/curveSlowDownRatio: 1.5
+ * /op_common_params/enableFollowing: True
+ * /op_common_params/enableLaneChange: False
+ * /op_common_params/enableStopSignBehavior: False
+ * /op_common_params/enableSwerving: False
+ * /op_common_params/enableTrafficLightBehavior: True
+ * /op_common_params/experimentName: carla_complete_test
+ * /op_common_params/front_length: 1.0
+ * /op_common_params/giveUpDistance: -4.0
+ * /op_common_params/goalDiscoveryDistance: 1.0
+ * /op_common_params/height: 1.47
+ * /op_common_params/horizonDistance: 80
+ * /op_common_params/horizontalSafetyDistance: 0.4
+ * /op_common_params/lanelet2_origin: 0,0,0,
+ * /op_common_params/length: 4.2
+ * /op_common_params/mapFileName: /home/siruu/Deskt...
+ * /op_common_params/mapSource: 2
+ * /op_common_params/maxAcceleration: 3
+ * /op_common_params/maxDeceleration: -3
+ * /op_common_params/maxDistanceToAvoid: 10.0
+ * /op_common_params/maxLocalPlanDistance: 80
+ * /op_common_params/maxVelocity: 20.0
+ * /op_common_params/maxWheelAngle: 0.45
+ * /op_common_params/minDistanceToAvoid: 20.0
+ * /op_common_params/minFollowingDistance: 40.0
+ * /op_common_params/minPursuiteDistance: 3.0
+ * /op_common_params/minVelocity: 0.0
+ * /op_common_params/objects_input_topic: /detection/contou...
+ * /op_common_params/pathDensity: 0.5
+ * /op_common_params/rollOutDensity: 0.5
+ * /op_common_params/rollOutsNumber: 0
+ * /op_common_params/smoothingDataWeight: 0.48
+ * /op_common_params/smoothingSmoothWeight: 0.2
+ * /op_common_params/speedProfileFactor: 4.0
+ * /op_common_params/steeringDelay: 0.0
+ * /op_common_params/turningRadius: 5.2
+ * /op_common_params/use_internal_acc: False
+ * /op_common_params/vehicle_status_topic: /vehicle_status
+ * /op_common_params/vel_can_topic: /can_info
+ * /op_common_params/vel_curr_topic: /current_velocity
+ * /op_common_params/vel_odom_topic: /odom
+ * /op_common_params/velocitySource: 0
+ * /op_common_params/verticalSafetyDistance: 0.5
+ * /op_common_params/wheelBaseLength: 2.7
+ * /op_common_params/width: 1.85
+ * /op_fix2tfpose/lanelet2_origin: 0,0,0,
+ * /op_fix2tfpose/mapFileName: /home/siruu/Deskt...
+ * /op_fix2tfpose/mapSource: 2
+ * /op_fix2tfpose/plane: 0
+ * /op_global_planner/destinationFileName: 
+ * /op_global_planner/enableExploreMode: False
+ * /op_global_planner/enableHMI: False
+ * /op_global_planner/enableLaneChange: True
+ * /op_global_planner/enableReplan: True
+ * /op_global_planner/enableRvizInput: True
+ * /op_global_planner/enableSmoothing: True
+ * /op_global_planner/experimentName: carla_complete_test
+ * /op_global_planner/external_waypoints_topic: /carla/hero/waypo...
+ * /op_global_planner/goalConfirmDistance: 10.0
+ * /op_global_planner/lanelet2_origin: 0,0,0
+ * /op_global_planner/mapFileName: /home/siruu/Deskt...
+ * /op_global_planner/mapSource: 2
+ * /op_global_planner/pathDensity: 1.0
+ * /op_global_planner/vehicle_status_topic: /vehicle_status
+ * /op_global_planner/vel_can_topic: /can_info
+ * /op_global_planner/vel_curr_topic: /current_velocity
+ * /op_global_planner/vel_odom_topic: /odom
+ * /op_global_planner/velocitySource: 0
+ * /op_motion_predictor/acc_weight_factor: 0.2
+ * /op_motion_predictor/dir_weight_factor: 0.2
+ * /op_motion_predictor/distanceBetweenCurbs: 1.5
+ * /op_motion_predictor/enableCurbObstacles: False
+ * /op_motion_predictor/enableGenrateBranches: False
+ * /op_motion_predictor/enableParticleFilterPrediction: False
+ * /op_motion_predictor/enableStepByStepSignal: False
+ * /op_motion_predictor/ind_weight_factor: 0.2
+ * /op_motion_predictor/keep_percentage: 0.5
+ * /op_motion_predictor/max_distance_to_lane: 2.0
+ * /op_motion_predictor/min_particles_num: 2
+ * /op_motion_predictor/min_prediction_distance: 10.0
+ * /op_motion_predictor/min_prediction_time: 2.0
+ * /op_motion_predictor/particles_number: 50
+ * /op_motion_predictor/pose_weight_factor: 0.2
+ * /op_motion_predictor/vel_weight_factor: 0.2
+ * /op_motion_predictor/visualizationTime: 0.05
+ * /op_trajectory_evaluator/collision_time: 3.0
+ * /op_trajectory_evaluator/enablePrediction: True
+ * /op_trajectory_evaluator/keepCurrentTrajectory: True
+ * /op_trajectory_evaluator/weight_lane_change: 0.2
+ * /op_trajectory_evaluator/weight_lateral: 0.2
+ * /op_trajectory_evaluator/weight_longitudinal: 0.2
+ * /op_trajectory_evaluator/weight_priority: 0.2
+ * /op_trajectory_evaluator/weight_transition: 0.2
+ * /op_trajectory_generator/enableForwardSimulation: False
+ * /op_trajectory_generator/enableHeadingSmoothing: False
+ * /op_trajectory_generator/samplingOutMargin: 15
+ * /op_trajectory_generator/samplingSpeedFactor: 1.0
+ * /op_trajectory_generator/samplingTipMargin: 5
+ * /op_trajectory_generator/startFromFrontAxel: False
+ * /op_waypoint_follower/accelAvgDelay: 0.0
+ * /op_waypoint_follower/accelGainKD: 0.5
+ * /op_waypoint_follower/accelGainKI: 0.5
+ * /op_waypoint_follower/accelGainKP: 6.0
+ * /op_waypoint_follower/accelInitDelay: 0.0
+ * /op_waypoint_follower/accelerationPushRatio: 1.0
+ * /op_waypoint_follower/avgAcceleration: 2.75
+ * /op_waypoint_follower/avgDeceleration: -2.75
+ * /op_waypoint_follower/avg_engine_brake_accel: -1.0
+ * /op_waypoint_follower/brakeAvgDelay: 0.0
+ * /op_waypoint_follower/brakeGainKD: 0.0
+ * /op_waypoint_follower/brakeGainKI: 2.5
+ * /op_waypoint_follower/brakeGainKP: 8.0
+ * /op_waypoint_follower/brakeInitDelay: 0.0
+ * /op_waypoint_follower/brakingPushRatio: 1.0
+ * /op_waypoint_follower/control_frequency: 50
+ * /op_waypoint_follower/drive_mode: 1
+ * /op_waypoint_follower/enableSimulationMode: 2
+ * /op_waypoint_follower/localizer_pose_topic: sim_localizer_pose
+ * /op_waypoint_follower/max_accel_value: 70
+ * /op_waypoint_follower/max_brake_value: 100
+ * /op_waypoint_follower/max_steer_value: 11.52
+ * /op_waypoint_follower/min_follow_safe_distance: 4.0
+ * /op_waypoint_follower/pose_topic: sim_pose
+ * /op_waypoint_follower/steerAngleGainKD: 0.0
+ * /op_waypoint_follower/steerAngleGainKI: 0.0
+ * /op_waypoint_follower/steerAngleGainKP: 1.0
+ * /op_waypoint_follower/steerTorqueGainKD: 0.0
+ * /op_waypoint_follower/steerTorqueGainKI: 0.0
+ * /op_waypoint_follower/steerTorqueGainKP: 85.0
+ * /op_waypoint_follower/steer_mode: 1
+ * /op_waypoint_follower/vehicle_status_topic: sim_vehicle_status
+ * /op_waypoint_follower/velocity_topic: sim_velocity
+ * /ray_ground_filter/base_frame: base_link
+ * /ray_ground_filter/clipping_height: 2.4
+ * /ray_ground_filter/concentric_divider_distance: 0.01
+ * /ray_ground_filter/general_max_slope: 5
+ * /ray_ground_filter/ground_point_topic: /points_ground
+ * /ray_ground_filter/input_point_topic: /points_raw
+ * /ray_ground_filter/local_max_slope: 8
+ * /ray_ground_filter/min_height_threshold: 0.25
+ * /ray_ground_filter/min_point_distance: 2.0
+ * /ray_ground_filter/no_ground_point_topic: /points_no_ground
+ * /ray_ground_filter/radial_divider_angle: 0.08
+ * /ray_ground_filter/reclass_distance_threshold: 0.1
+ * /robot_description: <?xml version="1....
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /tf_pitch: 0.0
+ * /tf_roll: 0.0
+ * /tf_x: 0
+ * /tf_y: 0
+ * /tf_yaw: 0.0
+ * /tf_z: 1.6
+ * /use_gui: False
+ * /use_sim_time: True
+ * /voxel_grid_filter/measurement_range: 200
+ * /voxel_grid_filter/output_log: False
+ * /voxel_grid_filter/points_topic: points_raw
+
+NODES
+  /
+    base_link_to_localizer (tf/static_transform_publisher)
+    can_status_translator (autoware_connector/can_status_translator)
+    gnss_relay (topic_tools/relay)
+    imag_relay (topic_tools/relay)
+    imu_relay (topic_tools/relay)
+    info_relay (topic_tools/relay)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    lidar_euclidean_cluster_detect (lidar_euclidean_cluster_detect/lidar_euclidean_cluster_detect)
+    lidar_kf_contour_track (lidar_kf_contour_track/lidar_kf_contour_track)
+    map_loader (map_file/points_map_loader)
+    map_to_mobility (tf/static_transform_publisher)
+    ndt_matching (lidar_localizer/ndt_matching)
+    odo_relay (topic_tools/relay)
+    op_behavior_selector (op_local_planner/op_behavior_selector)
+    op_common_params (op_local_planner/op_common_params)
+    op_fix2tfpose (op_gnss_localizer/op_fix2tfpose)
+    op_global_planner (op_global_planner/op_global_planner)
+    op_motion_predictor (op_local_planner/op_motion_predictor)
+    op_trajectory_evaluator (op_local_planner/op_trajectory_evaluator)
+    op_trajectory_generator (op_local_planner/op_trajectory_generator)
+    op_waypoint_follower (op_waypoint_follower/op_waypoint_follower)
+    points_relay (topic_tools/relay)
+    pose_relay (topic_tools/relay)
+    ray_ground_filter (points_preprocessor/ray_ground_filter)
+    robot_state_publisher (robot_state_publisher/state_publisher)
+    rviz (rviz/rviz)
+    vel_relay (topic_tools/relay)
+    voxel_grid_filter (points_downsampler/voxel_grid_filter)
+    world_to_map (tf/static_transform_publisher)
+  /autoware_launcher/
+    config_voxel_grid_filter (rostopic/rostopic)
+  /detection/contour_tracker/
+    contour_track_visualization_01 (detected_objects_visualizer/visualize_detected_objects)
+  /detection/lidar_detector/
+    cluster_detect_visualization_01 (detected_objects_visualizer/visualize_detected_objects)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/siruu/Desktop/Carla_Leaderboard_2_0/op_agent/bridge2autoware.launch http://localhost:11311
+[1mprocess[world_to_map-1]: started with pid [22875][0m
+[1mprocess[map_to_mobility-2]: started with pid [22876][0m
+[1mprocess[base_link_to_localizer-3]: started with pid [22877][0m
+[1mprocess[points_relay-4]: started with pid [22885][0m
+[1mprocess[imag_relay-5]: started with pid [22891][0m
+[1mprocess[info_relay-6]: started with pid [22902][0m
+[1mprocess[gnss_relay-7]: started with pid [22907][0m
+[1mprocess[imu_relay-8]: started with pid [22915][0m
+[1mprocess[odo_relay-9]: started with pid [22927][0m
+[1mprocess[rviz-10]: started with pid [22934][0m
+[1mprocess[map_loader-11]: started with pid [22935][0m
+[1mprocess[op_global_planner-12]: started with pid [22940][0m
+[1mprocess[joint_state_publisher-13]: started with pid [22946][0m
+[1mprocess[robot_state_publisher-14]: started with pid [22949][0m
+[1mprocess[op_fix2tfpose-15]: started with pid [22957][0m
+[1mprocess[voxel_grid_filter-16]: started with pid [22960][0m
+[1mprocess[autoware_launcher/config_voxel_grid_filter-17]: started with pid [22961][0m
+[1mprocess[ndt_matching-18]: started with pid [22963][0m
+[33m[ WARN] [1682993268.477199320]: The 'state_publisher' executable is deprecated. Please use 'robot_state_publisher' instead[0m
+[1mprocess[can_status_translator-19]: started with pid [22977][0m
+Trying to Load the map to Initialize GPS Orientation 
+ >> Loading KML Map file ... /home/siruu/Desktop/Carla_Leaderboard_2_0/op_agent/autoware-contents/maps/vector_maps/kml/Town01.kml
+[1mprocess[pose_relay-20]: started with pid [22994][0m
+inotify_add_watch("/home/siruu/.config/ibus/bus/daf467550c6246ec8ad21128e8577694-unix-1") failed: "No space left on device"
+ >> Reading Data from KML map file ... 
+ >> Load Lanes from KML file .. 
+[1mprocess[vel_relay-21]: started with pid [23006][0m
+[1mprocess[op_common_params-22]: started with pid [23009][0m
+[1mprocess[ray_ground_filter-23]: started with pid [23016][0m
+[1mprocess[lidar_euclidean_cluster_detect-24]: started with pid [23019][0m
+[1mprocess[detection/lidar_detector/cluster_detect_visualization_01-25]: started with pid [23031][0m
+ >> Load Traffic lights from KML file .. 
+ >> Load Stop lines from KML file .. 
+ >> Load Signes from KML file .. 
+ >> Load Crossings from KML file .. 
+ >> Load Markings from KML file .. 
+ >> Load Road boundaries from KML file .. 
+ >> Load Curbs from KML file .. 
+ >> Load Lines from KML file .. 
+[1mprocess[lidar_kf_contour_track-26]: started with pid [23045][0m
+[1mprocess[detection/contour_tracker/contour_track_visualization_01-27]: started with pid [23049][0m
+[1mprocess[op_trajectory_generator-28]: started with pid [23057][0m
+[1mprocess[op_motion_predictor-29]: started with pid [23070][0m
+[0m[ INFO] [1682993268.706021229]: [visualize_detected_objects] objects_src_topic: /detection/lidar_detector/objects[0m
+[0m[ INFO] [1682993268.707829529]: [visualize_detected_objects] object_speed_threshold: 0.10[0m
+[0m[ INFO] [1682993268.708891544]: [visualize_detected_objects] arrow_speed_threshold: 0.25[0m
+[0m[ INFO] [1682993268.709076257]: [visualize_detected_objects] marker_display_duration: 0.20[0m
+[0m[ INFO] [1682993268.709254992]: [visualize_detected_objects] label_color: {R:255.0, G:255.0, B:255.0, A:1.0}[0m
+[0m[ INFO] [1682993268.709426369]: [visualize_detected_objects] arrow_color: {R:0.0, G:255.0, B:0.0, A:0.8}[0m
+[0m[ INFO] [1682993268.709928955]: [visualize_detected_objects] hull_color: {R:51.0, G:204.0, B:51.0, A:0.8}[0m
+[0m[ INFO] [1682993268.710947841]: [visualize_detected_objects] box_color: {R:51.0, G:128.0, B:204.0, A:0.8}[0m
+[1mprocess[op_trajectory_evaluator-30]: started with pid [23077][0m
+[0m[ INFO] [1682993268.711444908]: [visualize_detected_objects] model_color: {R:190.0, G:190.0, B:190.0, A:0.5}[0m
+[0m[ INFO] [1682993268.712045698]: [visualize_detected_objects] centroid_color: {R:77.0, G:121.0, B:255.0, A:0.8}[0m
+[0m[ INFO] [1682993268.722915281]: [visualize_detected_objects] object_src_topic: /detection/lidar_detector/objects[0m
+[0m[ INFO] [1682993268.723843926]: [visualize_detected_objects] markers_out_topic: /detection/lidar_detector/objects_markers[0m
+[1mprocess[op_behavior_selector-31]: started with pid [23088][0m
+Region No: 1, Radius: 4, F time: 1.5
+Region No: 2, Radius: 7.2, F time: 1.125
+Region No: 3, Radius: 12.96, F time: 0.84375
+Region No: 4, Radius: 23.328, F time: 0.632812
+Region No: 5, Radius: 41.9904, F time: 0.474609
+Region No: 6, Radius: 75.5827, F time: 0.355957
+Region No: 7, Radius: 80, F time: 0.266968
+[0m[ INFO] [1682993268.745952899]: [visualize_detected_objects] objects_src_topic: /detection/contour_tracker/objects[0m
+[0m[ INFO] [1682993268.747117923]: [visualize_detected_objects] object_speed_threshold: 0.10[0m
+[0m[ INFO] [1682993268.747420674]: [visualize_detected_objects] arrow_speed_threshold: 0.25[0m
+[0m[ INFO] [1682993268.747978331]: [visualize_detected_objects] marker_display_duration: 0.20[0m
+[0m[ INFO] [1682993268.748446369]: [visualize_detected_objects] label_color: {R:255.0, G:255.0, B:255.0, A:1.0}[0m
+[0m[ INFO] [1682993268.748816102]: [visualize_detected_objects] arrow_color: {R:0.0, G:255.0, B:0.0, A:0.8}[0m
+[0m[ INFO] [1682993268.749235699]: [visualize_detected_objects] hull_color: {R:51.0, G:204.0, B:51.0, A:0.8}[0m
+[0m[ INFO] [1682993268.749557624]: [visualize_detected_objects] box_color: {R:51.0, G:128.0, B:204.0, A:0.8}[0m
+[0m[ INFO] [1682993268.749982673]: [visualize_detected_objects] model_color: {R:190.0, G:190.0, B:190.0, A:0.5}[0m
+[0m[ INFO] [1682993268.750305044]: [visualize_detected_objects] centroid_color: {R:77.0, G:121.0, B:255.0, A:0.8}[0m
+[0m[ INFO] [1682993268.764166503]: [visualize_detected_objects] object_src_topic: /detection/contour_tracker/objects[0m
+[0m[ INFO] [1682993268.764800746]: [visualize_detected_objects] markers_out_topic: /detection/contour_tracker/objects_markers[0m
+[1mprocess[op_waypoint_follower-32]: started with pid [23098][0m
+ >> Link lanes and waypoints with pointers ... 
+ >> Link missing branches and waypoints... 
+Rolls Number: 0
+ >> Link Lane change semantics ... 
+ >> Link Stop lines and Traffic lights ... 
+ >> Link Boundaries and Waypoints ... 
+ >> Find Max IDs ... 
+Map loaded from kml file with (124) lanes, First Point ( X:384.590958811, Y:1.97999977136, Z:0, A:3.1410614169
+Lon:0, Lat:0, Alt:0, Dir:3.1410614169
+)
+Particles Num Before : 30
+ >> Loading KML Map file ... /home/siruu/Desktop/Carla_Leaderboard_2_0/op_agent/autoware-contents/maps/vector_maps/kml/Town01.kml
+ >> Reading Data from KML map file ... 
+ >> Load Lanes from KML file .. 
+ >>>>> Trying to Get Closest Point : 0.0350394, GPS_X: 338.729, GPS_Y: -224.913, MapX:338.764, MapY: -224.913
+op_waypoint_follower initialized successfully 
+ >> Load Traffic lights from KML file .. 
+ >> Load Stop lines from KML file .. 
+ >> Load Signes from KML file .. 
+ >> Load Crossings from KML file .. 
+ >> Load Markings from KML file .. 
+ >> Load Road boundaries from KML file .. 
+ >> Load Curbs from KML file .. 
+ >> Load Lines from KML file .. 
+ >> Link lanes and waypoints with pointers ... 
+ >> Link missing branches and waypoints... 
+ >> Link Lane change semantics ... 
+ >> Link Stop lines and Traffic lights ... 
+ >> Link Boundaries and Waypoints ... 
+ >> Find Max IDs ... 
+Map loaded from kml file with (124) lanes, First Point ( X:384.590958811, Y:1.97999977136, Z:0, A:3.1410614169
+Lon:0, Lat:0, Alt:0, Dir:3.1410614169
+)
+ ******* Map Is Loaded successfully from the tracker.
+ >> Loading KML Map file ... /home/siruu/Desktop/Carla_Leaderboard_2_0/op_agent/autoware-contents/maps/vector_maps/kml/Town01.kml
+OpenPlanner Motion Predictor initialized successfully 
+ >> Reading Data from KML map file ... 
+ >> Load Lanes from KML file .. 
+ >> Loading KML Map file ... /home/siruu/Desktop/Carla_Leaderboard_2_0/op_agent/autoware-contents/maps/vector_maps/kml/Town01.kml
+ >> Reading Data from KML map file ... 
+ >> Load Lanes from KML file .. 
+ >> Load Traffic lights from KML file .. 
+ >> Load Stop lines from KML file .. 
+ >> Load Signes from KML file .. 
+ >> Load Crossings from KML file .. 
+ >> Load Markings from KML file .. 
+ >> Load Road boundaries from KML file .. 
+ >> Load Curbs from KML file .. 
+ >> Load Lines from KML file .. 
+ >> Load Traffic lights from KML file .. 
+ >> Load Stop lines from KML file .. 
+ >> Load Signes from KML file .. 
+ >> Load Crossings from KML file .. 
+ >> Load Markings from KML file .. 
+ >> Load Road boundaries from KML file .. 
+ >> Load Curbs from KML file .. 
+ >> Load Lines from KML file .. 
+ >> Link lanes and waypoints with pointers ... 
+ >> Link missing branches and waypoints... 
+ >> Link Lane change semantics ... 
+ >> Link Stop lines and Traffic lights ... 
+ >> Link Boundaries and Waypoints ... 
+ >> Find Max IDs ... 
+Map loaded from kml file with (124) lanes, First Point ( X:384.590958811, Y:1.97999977136, Z:0, A:3.1410614169
+Lon:0, Lat:0, Alt:0, Dir:3.1410614169
+)
+ ******* Map Is Loaded successfully from the tracker.
+ >> Loading KML Map file ... /home/siruu/Desktop/Carla_Leaderboard_2_0/op_agent/autoware-contents/maps/vector_maps/kml/Town01.kml
+ >> Link lanes and waypoints with pointers ... 
+ >> Link missing branches and waypoints... 
+ >> Link Lane change semantics ... 
+ >> Link Stop lines and Traffic lights ... 
+ >> Link Boundaries and Waypoints ... 
+ >> Find Max IDs ... 
+Map loaded from kml file with (124) lanes, First Point ( X:384.590958811, Y:1.97999977136, Z:0, A:3.1410614169
+Lon:0, Lat:0, Alt:0, Dir:3.1410614169
+)
+ ******* Map Is Loaded successfully from the tracker.
+ >> Reading Data from KML map file ... 
+ >> Load Lanes from KML file .. 
+ >> Load Traffic lights from KML file .. 
+ >> Load Stop lines from KML file .. 
+ >> Load Signes from KML file .. 
+ >> Load Crossings from KML file .. 
+ >> Load Markings from KML file .. 
+ >> Load Road boundaries from KML file .. 
+ >> Load Curbs from KML file .. 
+ >> Load Lines from KML file .. 
+ >> Link lanes and waypoints with pointers ... 
+ >> Link missing branches and waypoints... 
+ >> Link Lane change semantics ... 
+ >> Link Stop lines and Traffic lights ... 
+ >> Link Boundaries and Waypoints ... 
+ >> Find Max IDs ... 
+Map loaded from kml file with (124) lanes, First Point ( X:384.590958811, Y:1.97999977136, Z:0, A:3.1410614169
+Lon:0, Lat:0, Alt:0, Dir:3.1410614169
+)
+ ******* Map Is Loaded successfully from the tracker.
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+[1m[autoware_launcher/config_voxel_grid_filter-17] process has finished cleanly
+log file: /home/siruu/.ros/log/9bc8e2c2-e88c-11ed-a4e8-28d0ea5380d1/autoware_launcher-config_voxel_grid_filter-17*.log[0m
+ ----------------------------------------------------- 
+Received Path From external source  !! 20
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 0, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 1, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 2, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 3, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 4, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 5, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 6, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 7, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 8, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 9, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 10, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 11, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 12, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 13, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 14, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 15, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 16, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 17, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 18, Number Found: 1
+ ----------------------------------------------------- 
+ ----------------------------------------------------- 
+ Waypoint: 19, Number Found: 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 136, Distance : 0, Angle: 0
+
+Info: PlannerH -> Plan (A) Path With Size (18), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 302, Distance : 0.000523146, Angle: 0.000263293
+
+Info: PlannerH -> Plan (A) Path With Size (26), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 87, Distance : 0, Angle: 0
+
+Info: PlannerH -> Plan (A) Path With Size (54), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 87, Distance : 0, Angle: 0
+
+Info: PlannerH -> Plan (A) Path With Size (53), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 87, Distance : 0, Angle: 0
+
+Info: PlannerH -> Plan (A) Path With Size (53), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 87, Distance : 0, Angle: 0
+
+Info: PlannerH -> Plan (A) Path With Size (52), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 87, Distance : 0, Angle: 0
+
+Info: PlannerH -> Plan (A) Path With Size (17), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 344, Distance : 0.000559987, Angle: 0.0368553
+
+Info: PlannerH -> Plan (A) Path With Size (24), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 168, Distance : 0, Angle: 0
+
+Info: PlannerH -> Plan (A) Path With Size (52), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 168, Distance : 0, Angle: 0
+
+Info: PlannerH -> Plan (A) Path With Size (53), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 168, Distance : 0, Angle: 0
+
+Info: PlannerH -> Plan (A) Path With Size (6), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 233, Distance : 0.000628821, Angle: 1.51149
+
+Info: PlannerH -> Plan (A) Path With Size (18), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 38, Distance : 0, Angle: 0
+
+Info: PlannerH -> Plan (A) Path With Size (53), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 108, Distance : 0, Angle: 0
+
+Info: PlannerH -> Plan (A) Path With Size (55), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 108, Distance : 0, Angle: 0
+
+Info: PlannerH -> Plan (A) Path With Size (52), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 108, Distance : 0, Angle: 0
+
+Info: PlannerH -> Plan (A) Path With Size (53), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 108, Distance : 0, Angle: 0
+
+Info: PlannerH -> Plan (A) Path With Size (53), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 108, Distance : 0, Angle: 0
+
+Info: PlannerH -> Plan (A) Path With Size (52), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+Goal Found, LaneID: 108, Distance : 0, Angle: 0
+
+Info: PlannerH -> Plan (A) Path With Size (43), MultiPaths No(1) Extraction Time : 
+ ----------------------------------------------------- 
+Straight Planning Case !! 1
+ ----------------------------------------------------- 
+New DP Path -> 761
+Received New Global Paths Evaluator ! 1
+Received New Global Paths Evaluator ! 1
+Received New Global Path Generator ! 
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Paths Evaluator ! 1
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Generator ! 
+Received New Global Path Selector! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Paths Evaluator ! 1
+Received New Global Paths Evaluator ! 1
+Received New Global Path Generator ! 
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+[0m[ INFO] [1682993275.437284801, 2.800000041]: euclidean_cluster > Setting points node to /points_no_ground[0m
+[0m[ INFO] [1682993275.437963359, 2.800000041]: Euclidean Clustering: Difference of Normals will not be used.[0m
+[0m[ INFO] [1682993275.438292825, 2.800000041]: [euclidean_clustering] downsample_cloud: 0[0m
+[0m[ INFO] [1682993275.438595760, 2.800000041]: [euclidean_clustering] remove_ground: 0[0m
+[0m[ INFO] [1682993275.438910485, 2.800000041]: [euclidean_clustering] leaf_size: 0.100000[0m
+[0m[ INFO] [1682993275.439205713, 2.800000041]: [euclidean_clustering] cluster_size_min 5[0m
+[0m[ INFO] [1682993275.439493769, 2.800000041]: [euclidean_clustering] cluster_size_max: 100000[0m
+[0m[ INFO] [1682993275.439779415, 2.800000041]: [euclidean_clustering] pose_estimation: 0[0m
+[0m[ INFO] [1682993275.440071347, 2.800000041]: [euclidean_clustering] clip_min_height: -1.600000[0m
+[0m[ INFO] [1682993275.440358296, 2.800000041]: [euclidean_clustering] clip_max_height: 2.500000[0m
+[0m[ INFO] [1682993275.440665973, 2.800000041]: [euclidean_clustering] keep_lanes: 0[0m
+[0m[ INFO] [1682993275.440965923, 2.800000041]: [euclidean_clustering] keep_lane_left_distance: 5.000000[0m
+[0m[ INFO] [1682993275.441317325, 2.800000041]: [euclidean_clustering] keep_lane_right_distance: 5.000000[0m
+[0m[ INFO] [1682993275.441767581, 2.800000041]: [euclidean_clustering] cluster_merge_threshold: 0.000000[0m
+[0m[ INFO] [1682993275.442134061, 2.800000041]: [euclidean_clustering] output_frame: velodyne[0m
+[0m[ INFO] [1682993275.442521921, 2.800000041]: [euclidean_clustering] remove_points_upto: 2.500000[0m
+[0m[ INFO] [1682993275.442905156, 2.800000041]: [euclidean_clustering] clustering_distance: 0.750000[0m
+[0m[ INFO] [1682993275.443250760, 2.800000041]: [euclidean_clustering] use_gpu: 1[0m
+[0m[ INFO] [1682993275.443572531, 2.800000041]: [euclidean_clustering] use_multiple_thres: 0[0m
+[0m[ INFO] [1682993275.443917356, 2.800000041]: [euclidean_clustering] clustering_distances: [0.5,1.1,1.6,2.1,2.6][0m
+[0m[ INFO] [1682993275.444485798, 2.800000041]: [euclidean_clustering] clustering_ranges: [15,30,45,60][0m
+Received New Global Paths Evaluator ! 1
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Paths Evaluator ! 1
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Generator ! 
+Received New Global Path Selector! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Generator ! 
+Received New Global Paths Evaluator ! 1
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+QObject::connect: Cannot queue arguments of type 'QVector<int>'
+(Make sure 'QVector<int>' is registered using qRegisterMetaType().)
+QObject::connect: Cannot queue arguments of type 'QVector<int>'
+(Make sure 'QVector<int>' is registered using qRegisterMetaType().)
+Received New Global Paths Evaluator ! 1
+Received New Global Paths Evaluator ! 1
+Received New Global Path Generator ! 
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Received New Global Paths Evaluator ! 1
+From Trajectory Evaluator ! Local or Global Paths are not published ! 
+From Trajectory Evaluator ! Local or Global Paths are not published ! 
+Received New Global Path Generator ! 
+Received New Global Path Selector! 
+Received New Global Path Selector! 
+Warning From Trajectory Evaluator, paths size mismatch, GlobalPaths: 0, LocalPaths: 1
+Received New Global Path Selector! 
+Warning From Trajectory Selector, paths size mismatch, GlobalPaths: 0, LocalPaths: 1
+Received New Global Path Selector! 
+Receive new Trajectory From Behavior Selector : 165
+Receive new Trajectory From Behavior Selector : 165
+^C[1m> Stopping the route[0m
+
+[1m========= Results of RouteScenario_0 (repetition 0) ------ [91mFAILURE[0m [1m=========[0m
+
+╒═════════════════════════════════╤═════════════════════╕
+│ Start Time                      │ 2023-05-02 11:07:47 │
+├─────────────────────────────────┼─────────────────────┤
+│ End Time                        │ 2023-05-02 11:08:28 │
+├─────────────────────────────────┼─────────────────────┤
+│ Duration (System Time)          │ 41.37s              │
+├─────────────────────────────────┼─────────────────────┤
+│ Duration (Game Time)            │ 14.6s               │
+├─────────────────────────────────┼─────────────────────┤
+│ Ratio (System Time / Game Time) │ 0.353               │
+╘═════════════════════════════════╧═════════════════════╛
+
+╒═══════════════════════╤═════════╤═════════╕
+│ Criterion             │ Result  │ Value   │
+├───────────────────────┼─────────┼─────────┤
+│ RouteCompletionTest   │ [91mFAILURE[0m │ 6.07 %  │
+├───────────────────────┼─────────┼─────────┤
+│ OutsideRouteLanesTest │ [91mFAILURE[0m │ 16.55 % │
+├───────────────────────┼─────────┼─────────┤
+│ CollisionTest         │ [91mFAILURE[0m │ 1 times │
+├───────────────────────┼─────────┼─────────┤
+│ RunningRedLightTest   │ [91mFAILURE[0m │ 1 times │
+├───────────────────────┼─────────┼─────────┤
+│ RunningStopTest       │ [92mSUCCESS[0m │ 0 times │
+├───────────────────────┼─────────┼─────────┤
+│ InRouteTest           │ [92mSUCCESS[0m │         │
+├───────────────────────┼─────────┼─────────┤
+│ AgentBlockedTest      │ [92mSUCCESS[0m │         │
+├───────────────────────┼─────────┼─────────┤
+│ Timeout               │ [92mSUCCESS[0m │         │
+╘═══════════════════════╧═════════╧═════════╛
+
+[1m> Registering the route statistics[0m
+[INFO] [1682993308.465748, 14.600000]: Sending SIGTERM to stack...
+[INFO] [1682993308.466997, 14.600000]: Waiting for termination of stack...
+[op_waypoint_follower-32] killing on exit
+[op_behavior_selector-31] killing on exit
+[op_trajectory_evaluator-30] killing on exit
+[op_motion_predictor-29] killing on exit
+[op_trajectory_generator-28] killing on exit
+[detection/contour_tracker/contour_track_visualization_01-27] killing on exit
+[lidar_kf_contour_track-26] killing on exit
+[detection/lidar_detector/cluster_detect_visualization_01-25] killing on exit
+[lidar_euclidean_cluster_detect-24] killing on exit
+[ray_ground_filter-23] killing on exit
+[op_common_params-22] killing on exit
+[vel_relay-21] killing on exit
+[pose_relay-20] killing on exit
+[can_status_translator-19] killing on exit
+[ndt_matching-18] killing on exit
+[voxel_grid_filter-16] killing on exit
+[op_fix2tfpose-15] killing on exit
+[robot_state_publisher-14] killing on exit
+[joint_state_publisher-13] killing on exit
+[op_global_planner-12] killing on exit
+[map_loader-11] killing on exit
+[rviz-10] killing on exit
+[odo_relay-9] killing on exit
+[imu_relay-8] killing on exit
+[gnss_relay-7] killing on exit
+[info_relay-6] killing on exit
+[imag_relay-5] killing on exit
+[points_relay-4] killing on exit
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::lock_error> >'
+  what():  boost: mutex lock failed in pthread_mutex_lock: Invalid argument
+[base_link_to_localizer-3] killing on exit
+[map_to_mobility-2] killing on exit
+[world_to_map-1] killing on exit
+^C[INFO] [1682993309.665035, 14.600000]: Terminated stack.
+[INFO] [1682993309.666195, 14.600000]: Stack is no longer running
+[INFO] [1682993309.666813, 14.600000]: Cleanup finished
+
+[1m========= Preparing RouteScenario_1 (repetition 0) =========
+> Setting up the agent[0m
+[1m> Loading the world[0m
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^CWARNING: Actor model vehicle.lincoln.mkz2017 not available. Using instead vehicle.tesla.model3
+^C^C^C^C >>>>> Ego Vehicle Prepared !!  1
+[1m> Running the route[0m
+^C[INFO] [1682993315.784224, 14.600000]: Executing stack...
+('Executing stack...', 'hero', 'Town03')
+-------------------------------
+Starting OpenPlanner .. 
+hero
+Town03
+false
+/carla/hero/waypoints
+-------------------------------
+[1m> Stopping the route[0m
+
+[1m========= Results of RouteScenario_1 (repetition 0) ------ [91mFAILURE[0m [1m=========[0m
+
+╒═════════════════════════════════╤═════════════════════╕
+│ Start Time                      │ 2023-05-02 11:08:35 │
+├─────────────────────────────────┼─────────────────────┤
+│ End Time                        │ 2023-05-02 11:08:35 │
+├─────────────────────────────────┼─────────────────────┤
+│ Duration (System Time)          │ 0.24s               │
+├─────────────────────────────────┼─────────────────────┤
+│ Duration (Game Time)            │ 0.1s                │
+├─────────────────────────────────┼─────────────────────┤
+│ Ratio (System Time / Game Time) │ 0.424               │
+╘═════════════════════════════════╧═════════════════════╛
+
+╒═══════════════════════╤═════════╤═════════╕
+│ Criterion             │ Result  │ Value   │
+├───────────────────────┼─────────┼─────────┤
+│ RouteCompletionTest   │ [91mFAILURE[0m │ 0.0 %   │
+├───────────────────────┼─────────┼─────────┤
+│ OutsideRouteLanesTest │ [92mSUCCESS[0m │ 0 %     │
+├───────────────────────┼─────────┼─────────┤
+│ CollisionTest         │ [92mSUCCESS[0m │ 0 times │
+├───────────────────────┼─────────┼─────────┤
+│ RunningRedLightTest   │ [92mSUCCESS[0m │ 0 times │
+├───────────────────────┼─────────┼─────────┤
+│ RunningStopTest       │ [92mSUCCESS[0m │ 0 times │
+├───────────────────────┼─────────┼─────────┤
+│ InRouteTest           │ [92mSUCCESS[0m │         │
+├───────────────────────┼─────────┼─────────┤
+│ AgentBlockedTest      │ [92mSUCCESS[0m │         │
+├───────────────────────┼─────────┼─────────┤
+│ Timeout               │ [92mSUCCESS[0m │         │
+╘═══════════════════════╧═════════╧═════════╛
+
+[1m> Registering the route statistics[0m
+[INFO] [1682993315.908444, 14.600000]: Sending SIGTERM to stack...
+[INFO] [1682993315.909804, 14.600000]: Waiting for termination of stack...
+^C[INFO] [1682993316.030369, 14.600000]: Terminated stack.
+[INFO] [1682993316.031520, 14.600000]: Stack is no longer running
+[INFO] [1682993316.032177, 14.600000]: Cleanup finished
+
+[1m========= Preparing RouteScenario_2 (repetition 0) =========
+> Setting up the agent[0m
+[1m> Loading the world[0m
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^CWARNING: Actor model vehicle.lincoln.mkz2017 not available. Using instead vehicle.tesla.model3
+^C^C[31m[op_motion_predictor-29] escalating to SIGTERM[0m
+^Cshutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+^C >>>>> Ego Vehicle Prepared !!  1
+^C[1m> Running the route[0m
+[INFO] [1682993324.278879, 14.600000]: Executing stack...
+('Executing stack...', 'hero', 'Town04')
+-------------------------------
+Starting OpenPlanner .. 
+hero
+Town04
+false
+/carla/hero/waypoints
+-------------------------------
+^C[1m> Stopping the route[0m
+
+[1m========= Results of RouteScenario_2 (repetition 0) ------ [91mFAILURE[0m [1m=========[0m
+
+╒═════════════════════════════════╤═════════════════════╕
+│ Start Time                      │ 2023-05-02 11:08:44 │
+├─────────────────────────────────┼─────────────────────┤
+│ End Time                        │ 2023-05-02 11:08:44 │
+├─────────────────────────────────┼─────────────────────┤
+│ Duration (System Time)          │ 0.25s               │
+├─────────────────────────────────┼─────────────────────┤
+│ Duration (Game Time)            │ 0.1s                │
+├─────────────────────────────────┼─────────────────────┤
+│ Ratio (System Time / Game Time) │ 0.407               │
+╘═════════════════════════════════╧═════════════════════╛
+
+╒═══════════════════════╤═════════╤═════════╕
+│ Criterion             │ Result  │ Value   │
+├───────────────────────┼─────────┼─────────┤
+│ RouteCompletionTest   │ [91mFAILURE[0m │ 0.0 %   │
+├───────────────────────┼─────────┼─────────┤
+│ OutsideRouteLanesTest │ [92mSUCCESS[0m │ 0 %     │
+├───────────────────────┼─────────┼─────────┤
+│ CollisionTest         │ [92mSUCCESS[0m │ 0 times │
+├───────────────────────┼─────────┼─────────┤
+│ RunningRedLightTest   │ [92mSUCCESS[0m │ 0 times │
+├───────────────────────┼─────────┼─────────┤
+│ RunningStopTest       │ [92mSUCCESS[0m │ 0 times │
+├───────────────────────┼─────────┼─────────┤
+│ InRouteTest           │ [92mSUCCESS[0m │         │
+├───────────────────────┼─────────┼─────────┤
+│ AgentBlockedTest      │ [92mSUCCESS[0m │         │
+├───────────────────────┼─────────┼─────────┤
+│ Timeout               │ [92mSUCCESS[0m │         │
+╘═══════════════════════╧═════════╧═════════╛
+
+[1m> Registering the route statistics[0m
+[INFO] [1682993324.495361, 14.600000]: Sending SIGTERM to stack...
+[INFO] [1682993324.496654, 14.600000]: Waiting for termination of stack...
+^C[INFO] [1682993324.549154, 14.600000]: Terminated stack.
+[INFO] [1682993324.550188, 14.600000]: Stack is no longer running
+[INFO] [1682993324.550748, 14.600000]: Cleanup finished
+
+[1m========= Preparing RouteScenario_3 (repetition 0) =========
+> Setting up the agent[0m
+[1m> Loading the world[0m
+^C
+[91mThe scenario could not be loaded:
+> map not found[0m
+
+Traceback (most recent call last):
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/leaderboard/leaderboard_evaluator.py", line 331, in _load_and_run_scenario
+    self._load_and_wait_for_world(args, config.town)
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/leaderboard/leaderboard_evaluator.py", line 216, in _load_and_wait_for_world
+    self.world = self.client.load_world(town)
+RuntimeError: map not found
+[1m> Registering the route statistics[0m
+[INFO] [1682993324.785232, 14.600000]: Stack is no longer running
+[INFO] [1682993324.786882, 14.600000]: Cleanup finished
+Exception AttributeError: "'NoneType' object has no attribute 'cleanup'" in <bound method LeaderboardEvaluator.__del__ of <__main__.LeaderboardEvaluator object at 0x7f6e17124710>> ignored
+Exception AttributeError: "'NoneType' object has no attribute 'actor_id_exists'" in <bound method ControlLoss.__del__ of <srunner.scenarios.control_loss.ControlLoss object at 0x7f6dba7f7f50>> ignored
+Exception AttributeError: "'NoneType' object has no attribute 'actor_id_exists'" in <bound method ControlLoss.__del__ of <srunner.scenarios.control_loss.ControlLoss object at 0x7f6e0c6158d0>> ignored
+Exception AttributeError: "'NoneType' object has no attribute 'actor_id_exists'" in <bound method ControlLoss.__del__ of <srunner.scenarios.control_loss.ControlLoss object at 0x7f6dba0e9190>> ignored
+Exception AttributeError: "'NoneType' object has no attribute 'actor_id_exists'" in <bound method ControlLoss.__del__ of <srunner.scenarios.control_loss.ControlLoss object at 0x7f6e0d2c0c50>> ignored
+Exception AttributeError: "'NoneType' object has no attribute 'actor_id_exists'" in <bound method ControlLoss.__del__ of <srunner.scenarios.control_loss.ControlLoss object at 0x7f6e0d226110>> ignored
+^C]0;siruu@siruu: ~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[01;32msiruu@siruu[00m:[01;34m~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[00m$ ^C
+]0;siruu@siruu: ~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[01;32msiruu@siruu[00m:[01;34m~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[00m$ ^C
+]0;siruu@siruu: ~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[01;32msiruu@siruu[00m:[01;34m~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[00m$ [H[2J]0;siruu@siruu: ~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[01;32msiruu@siruu[00m:[01;34m~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[00m$ ㄷ[Keix[K[Kxit
+exit
+
+Script done on 2023-05-02 11:08:49+0900

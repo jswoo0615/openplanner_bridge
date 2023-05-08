@@ -1,0 +1,159 @@
+Script started on 2023-05-02 11:05:33+0900
+(base) ]0;siruu@siruu: ~/Desktop/Carla_Leaderboard_2_0/op_bridge[01;32msiruu@siruu[00m:[01;34m~/Desktop/Carla_Leaderboard_2_0/op_bridge[00m$ conda dact[K[K[K[Kdeactivate
+]0;siruu@siruu: ~/Desktop/Carla_Leaderboard_2_0/op_bridge[01;32msiruu@siruu[00m:[01;34m~/Desktop/Carla_Leaderboard_2_0/op_bridge[00m$ conda deactivaterostopic echo /op_controlller_cmd[A]0;siruu@siruu: ~/Desktop/Carla_Leaderboard_2_0/op_bridge[01;32msiruu@siruu[00m:[01;34m~/Desktop/Carla_Leaderboard_2_0/op_bridge[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cactual_driving_path [A]0;siruu@siruu: ~/Desktop/Carla_Leaderboard_2_0/op_bridge[01;32msiruu@siruu[00m:[01;34m~/Desktop/Carla_Leaderboard_2_0/op_bridge[00m$ [C[C[Ccore[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cconda deactivate[9Proscoretopic echo /op_actual__driving_path [A]0;siruu@siruu: ~/Desktop/Carla_Leaderboard_2_0/op_bridge[01;32msiruu@siruu[00m:[01;34m~/Desktop/Carla_Leaderboard_2_0/op_bridge[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccontrol[6Pler_cmd[A]0;siruu@siruu: ~/Desktop/Carla_Leaderboard_2_0/op_bridge[01;32msiruu@siruu[00m:[01;34m~/Desktop/Carla_Leaderboard_2_0/op_bridge[00m$ [8Pconda deactivate
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcd op_sce[Kripts/
+]0;siruu@siruu: ~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[01;32msiruu@siruu[00m:[01;34m~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[00m$ ./run_route_sccenarios.sh 
+
+[1m========= Preparing RouteScenario_0 (repetition 0) =========
+> Setting up the agent[0m
+
+[91mCould not set up the required agent:
+> 'TEAM_CODE_ROOT'[0m
+
+Traceback (most recent call last):
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/leaderboard/leaderboard_evaluator.py", line 286, in _load_and_run_scenario
+    self.agent_instance = getattr(self.module_agent, agent_class_name)(args.agent_config)
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/leaderboard/autoagents/autonomous_agent.py", line 45, in __init__
+    self.setup(path_to_conf_file)
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/op_bridge/op_ros_agent.py", line 79, in setup
+    team_code_path = os.environ['TEAM_CODE_ROOT']
+  File "/usr/lib/python2.7/UserDict.py", line 40, in __getitem__
+    raise KeyError(key)
+KeyError: 'TEAM_CODE_ROOT'
+[1m> Registering the route statistics[0m
+
+[1m========= Preparing RouteScenario_1 (repetition 0) =========
+> Setting up the agent[0m
+
+[91mCould not set up the required agent:
+> 'TEAM_CODE_ROOT'[0m
+
+Traceback (most recent call last):
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/leaderboard/leaderboard_evaluator.py", line 286, in _load_and_run_scenario
+    self.agent_instance = getattr(self.module_agent, agent_class_name)(args.agent_config)
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/leaderboard/autoagents/autonomous_agent.py", line 45, in __init__
+    self.setup(path_to_conf_file)
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/op_bridge/op_ros_agent.py", line 79, in setup
+    team_code_path = os.environ['TEAM_CODE_ROOT']
+  File "/usr/lib/python2.7/UserDict.py", line 40, in __getitem__
+    raise KeyError(key)
+KeyError: 'TEAM_CODE_ROOT'
+[1m> Registering the route statistics[0m
+
+[1m========= Preparing RouteScenario_2 (repetition 0) =========
+> Setting up the agent[0m
+
+[91mCould not set up the required agent:
+> 'TEAM_CODE_ROOT'[0m
+
+Traceback (most recent call last):
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/leaderboard/leaderboard_evaluator.py", line 286, in _load_and_run_scenario
+    self.agent_instance = getattr(self.module_agent, agent_class_name)(args.agent_config)
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/leaderboard/autoagents/autonomous_agent.py", line 45, in __init__
+    self.setup(path_to_conf_file)
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/op_bridge/op_ros_agent.py", line 79, in setup
+    team_code_path = os.environ['TEAM_CODE_ROOT']
+  File "/usr/lib/python2.7/UserDict.py", line 40, in __getitem__
+    raise KeyError(key)
+KeyError: 'TEAM_CODE_ROOT'
+[1m> Registering the route statistics[0m
+
+[1m========= Preparing RouteScenario_3 (repetition 0) =========
+> Setting up the agent[0m
+
+[91mCould not set up the required agent:
+> 'TEAM_CODE_ROOT'[0m
+
+Traceback (most recent call last):
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/leaderboard/leaderboard_evaluator.py", line 286, in _load_and_run_scenario
+    self.agent_instance = getattr(self.module_agent, agent_class_name)(args.agent_config)
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/leaderboard/autoagents/autonomous_agent.py", line 45, in __init__
+    self.setup(path_to_conf_file)
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/op_bridge/op_ros_agent.py", line 79, in setup
+    team_code_path = os.environ['TEAM_CODE_ROOT']
+  File "/usr/lib/python2.7/UserDict.py", line 40, in __getitem__
+    raise KeyError(key)
+KeyError: 'TEAM_CODE_ROOT'
+[1m> Registering the route statistics[0m
+[1m> Registering the global statistics[0m
+]0;siruu@siruu: ~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[01;32msiruu@siruu[00m:[01;34m~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[00m$ ./run_route_sccenarios.sh 
+
+[1m========= Preparing RouteScenario_0 (repetition 0) =========
+> Setting up the agent[0m
+
+[91mCould not set up the required agent:
+> 'TEAM_CODE_ROOT'[0m
+
+Traceback (most recent call last):
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/leaderboard/leaderboard_evaluator.py", line 286, in _load_and_run_scenario
+    self.agent_instance = getattr(self.module_agent, agent_class_name)(args.agent_config)
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/leaderboard/autoagents/autonomous_agent.py", line 45, in __init__
+    self.setup(path_to_conf_file)
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/op_bridge/op_ros_agent.py", line 79, in setup
+    team_code_path = os.environ['TEAM_CODE_ROOT']
+  File "/usr/lib/python2.7/UserDict.py", line 40, in __getitem__
+    raise KeyError(key)
+KeyError: 'TEAM_CODE_ROOT'
+[1m> Registering the route statistics[0m
+
+[1m========= Preparing RouteScenario_1 (repetition 0) =========
+> Setting up the agent[0m
+
+[91mCould not set up the required agent:
+> 'TEAM_CODE_ROOT'[0m
+
+Traceback (most recent call last):
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/leaderboard/leaderboard_evaluator.py", line 286, in _load_and_run_scenario
+    self.agent_instance = getattr(self.module_agent, agent_class_name)(args.agent_config)
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/leaderboard/autoagents/autonomous_agent.py", line 45, in __init__
+    self.setup(path_to_conf_file)
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/op_bridge/op_ros_agent.py", line 79, in setup
+    team_code_path = os.environ['TEAM_CODE_ROOT']
+  File "/usr/lib/python2.7/UserDict.py", line 40, in __getitem__
+    raise KeyError(key)
+KeyError: 'TEAM_CODE_ROOT'
+[1m> Registering the route statistics[0m
+
+[1m========= Preparing RouteScenario_2 (repetition 0) =========
+> Setting up the agent[0m
+
+[91mCould not set up the required agent:
+> 'TEAM_CODE_ROOT'[0m
+
+Traceback (most recent call last):
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/leaderboard/leaderboard_evaluator.py", line 286, in _load_and_run_scenario
+    self.agent_instance = getattr(self.module_agent, agent_class_name)(args.agent_config)
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/leaderboard/autoagents/autonomous_agent.py", line 45, in __init__
+    self.setup(path_to_conf_file)
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/op_bridge/op_ros_agent.py", line 79, in setup
+    team_code_path = os.environ['TEAM_CODE_ROOT']
+  File "/usr/lib/python2.7/UserDict.py", line 40, in __getitem__
+    raise KeyError(key)
+KeyError: 'TEAM_CODE_ROOT'
+[1m> Registering the route statistics[0m
+
+[1m========= Preparing RouteScenario_3 (repetition 0) =========
+> Setting up the agent[0m
+
+[91mCould not set up the required agent:
+> 'TEAM_CODE_ROOT'[0m
+
+Traceback (most recent call last):
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/leaderboard/leaderboard_evaluator.py", line 286, in _load_and_run_scenario
+    self.agent_instance = getattr(self.module_agent, agent_class_name)(args.agent_config)
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/leaderboard/autoagents/autonomous_agent.py", line 45, in __init__
+    self.setup(path_to_conf_file)
+  File "/home/siruu/Desktop/Carla_Leaderboard_2_0/op_bridge/op_bridge/op_ros_agent.py", line 79, in setup
+    team_code_path = os.environ['TEAM_CODE_ROOT']
+  File "/usr/lib/python2.7/UserDict.py", line 40, in __getitem__
+    raise KeyError(key)
+KeyError: 'TEAM_CODE_ROOT'
+[1m> Registering the route statistics[0m
+[1m> Registering the global statistics[0m
+]0;siruu@siruu: ~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[01;32msiruu@siruu[00m:[01;34m~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[00m$ source ~/.ba[K[K[K[K[K[K[K[K[K[K[K[Ksource ~/.bas hrc
+(base) ]0;siruu@siruu: ~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[01;32msiruu@siruu[00m:[01;34m~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[00m$ #exit
+(base) ]0;siruu@siruu: ~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[01;32msiruu@siruu[00m:[01;34m~/Desktop/Carla_Leaderboard_2_0/op_bridge/op_scripts[00m$ exit
+exit
+
+Script done on 2023-05-02 11:06:50+0900
